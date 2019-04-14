@@ -30,63 +30,62 @@
   <main class="page-main">
     <div class="page-main__wrapper">
       <h1 class="page-main__title">Подбор программы</h1>
-      <p></p>
-      <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="page-main__cat-data">
-          <legend class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</legend>
-          <label class="page-main__label-cat-data" for="cat-name">Имя:*</label>
-          <input class="page-main__input-cat-data" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
-          <label class="page-main__label-cat-data" for="cat-weight">Вес (кг):*</label>
-          <input class="page-main__input-cat-data" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
-          <label class="page-main__label-cat-data" for="cat-old">Возраст (лет):</label>
-          <input class="page-main__input-cat-data" type="text" id="cat-old" name="cat-old" placeholder="7">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__cat-data">
+          <legend class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</legend>
+          <label class="form__label-cat-data" for="cat-name">Имя:*</label>
+          <input class="form__input-cat-data" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+          <label class="form__label-cat-data" for="cat-weight">Вес (кг):*</label>
+          <input class="form__input-cat-data" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
+          <label class="form__label-cat-data" for="cat-old">Возраст (лет):</label>
+          <input class="form__input-cat-data" type="text" id="cat-old" name="cat-old" placeholder="7">
         </fieldset>
-        <fieldset class="page-main__cat-goal">
-          <label class="page-main__label-goal">
-            <input class="page-main__input-goal" type="radio" name="goal" value="weight-loss" checked>
+        <fieldset class="form__cat-goal">
+          <label class="form__label-goal">
+            <input class="form__input-goal" type="radio" name="goal" value="weight-loss" checked>
             Похудение
           </label>
-          <label class="page-main__label-goal">
-            <input class="page-main__input-goal" type="radio" name="goal" value="weight-up">
+          <label class="form__label-goal">
+            <input class="form__input-goal" type="radio" name="goal" value="weight-up">
             Набор массы
           </label>
-          <label class="page-main__label-goal">
-            <input class="page-main__input-goal" type="radio" name="goal" value="get-advice">
+          <label class="form__label-goal">
+            <input class="form__input-goal" type="radio" name="goal" value="get-advice">
             Не знаю (Нужен ваш совет)
           </label>
         </fieldset>
-        <fieldset class="page-main__contacts">
-          <legend class="page-main__legend-contacts">Контактные данные (владельца кота)</legend>
-          <label class="page-main__label-contacts" for="owner-email">E-mail:*</label>
-          <input class="page-main__input-contacts" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
-          <label class="page-main__label-contacts" for="owner-tel">Телефон:*</label>
-          <input class="page-main__input-contacts" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+        <fieldset class="form__contacts">
+          <legend class="form__legend-contacts">Контактные данные (владельца кота)</legend>
+          <label class="form__label-contacts" for="owner-email">E-mail:*</label>
+          <input class="form__input-contacts" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+          <label class="form__label-contacts" for="owner-tel">Телефон:*</label>
+          <input class="form__input-contacts" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
         </fieldset>
-        <fieldset class="page-main__comments">
-          <legend class="page-main__legend-comments">Комментарий</legend>
+        <fieldset class="form__comments">
+          <legend class="form__legend-comments">Комментарий</legend>
           <textarea name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea>
         </fieldset>
-        <fieldset class="page-main__addition-info">
-          <legend class="page-main__legend-addition-info">Дополнительно</legend>
-          <label class="page-main__label-addition-info">
-            <input type="checkbox" name="sweetener" checked>
+        <fieldset class="form__addition-info">
+          <legend class="form__legend-addition-info">Дополнительно</legend>
+          <label class="form__label-addition-info">
+            <input class="form__input-addition-info" type="checkbox" name="sweetener" checked>
             Сахарозаменитель
           </label>
-          <label class="page-main__label-addition-info">
-            <input class="page-main__input-addition-info" type="checkbox" name="water">
+          <label class="form__label-addition-info">
+            <input class="form__input-addition-info" type="checkbox" name="water">
             Питьевая вода
           </label>
-          <label class="page-main__label-addition-info">
-            <input class="page-main__input-addition-info" type="checkbox" name="milk">
+          <label class="form__label-addition-info">
+            <input class="form__input-addition-info" type="checkbox" name="milk">
             Молоко
           </label>
-          <label class="page-main__label-addition-info">
-            <input class="page-main__input-addition-info" type="checkbox" name="vitamins">
+          <label class="form__label-addition-info">
+            <input class="form__input-addition-info" type="checkbox" name="vitamins">
             Витамины
           </label>
         </fieldset>
-        <button class="page-main__button" type="submit">Отправить заявку</button>
-        <p class="page-main__text">* — Обязательные поля</p>
+        <button class="form__button" type="submit">Отправить заявку</button>
+        <p class="form__text">* — Обязательные поля</p>
       </form>
     </div>
     <section class="contacts">
