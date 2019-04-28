@@ -1,14 +1,15 @@
 .progress {
-  width: 320px;
+  width: 100%;
   min-height: 705px;
-  margin: 0 auto;
   margin-top: 46px;
 
-  background-color: #f2f2f2;
+  background-color: @bg-lightgrey;
 }
 
 .progress__wrapper {
   // text-align: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .progress__title {
@@ -33,7 +34,7 @@
   padding-left: 20px;
   padding-right: 25px;
 
-  font-family: "Arial";
+  font-family: @content-font, sans-serif;
   font-size: 14px;
   line-height: 18px;
 
@@ -100,7 +101,7 @@
 
 
 
-  font-family: "Arial";
+  font-family: @content-font, sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
