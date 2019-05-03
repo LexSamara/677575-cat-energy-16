@@ -35,53 +35,41 @@
 }
 
 .advantages__item-pic(@item-pictures) {
-    position: absolute;
-    left: -80px;
-    top: -2px;
+  position: absolute;
+  left: -80px;
+  top: -2px;
 
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 
-    background-image: url(@item-pictures), url("../img/green-back.png");
-    background-size: auto, auto;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
+  background-image: url(@item-pictures), url("../img/green-back.png");
+  background-size: auto, auto;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .advantages__item {
   position: relative;
 
   margin-bottom: 26px;
-}
 
-.advantages__item {
   &:nth-child(1)::before {
     content: "";
     .advantages__item-pic("../img/advantage-1.png");
   }
-}
 
-.advantages__item {
   &:nth-child(2)::before {
     content: "";
     .advantages__item-pic("../img/advantage-2.png");
   }
-}
 
-.advantages__item {
   &:nth-child(3)::before {
     content: "";
     .advantages__item-pic("../img/advantage-3.png");
   }
-}
 
-.advantages__item {
   &:nth-child(4)::before {
     content: "";
     .advantages__item-pic("../img/advantage-4.png");
   }
 }
-
-
-
-
