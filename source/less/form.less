@@ -157,7 +157,7 @@
 .form__legend-wrapper {
   // display: flex;
 
-  overflow: hidden;
+  // overflow: hidden;
   // text-align: center;
 }
 
@@ -166,12 +166,12 @@
 
   flex-grow: 1;
 
-  width: 300px;
+  width: 200px;
 
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  padding-right: 30px;
+  // padding-right: 30px;
 
   font-family: @main-header-font, @content-font, sans-serif;
   font-size: 24px;
@@ -181,12 +181,12 @@
   outline: 1px solid red;
 
   &::after {
-    content: "";
+    content: "ssssssssssss";
     flex-grow: 1;
-    margin: 0 4px;
+    margin: 0 2px;
     background-size: 100% 3px;
     background-position: 0 50%;
     background-repeat: repeat-x;
-    background-image: linear-gradient(to right, green, green);
+    background-image: linear-gradient(to right, @bg-button, @bg-button);
   }
 }
