@@ -80,66 +80,61 @@
         </fieldset>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         <fieldset class="form__contacts">
           <div class="form__legend-wrapper">
-            <legend class="form__legend-contacts">Контактные данные (владельца кота)</legend>
+            <legend class="form__legend-contacts">Контактные данные<br> (владельца кота)</legend>
           </div>
-          <label class="form__label-contacts" for="owner-email">E-mail:*</label>
-          <input class="form__input-contacts" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
-          <label class="form__label-contacts" for="owner-tel">Телефон:*</label>
-          <input class="form__input-contacts" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+          <div class="form__element">
+            <label class="form__label-contacts" for="owner-email">E-mail:*</label>
+            <input class="form__input-contacts" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="form__element">
+            <label class="form__label-contacts" for="owner-tel">Телефон:*</label>
+            <input class="form__input-contacts" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+          </div>
         </fieldset>
 
-
-
-
-
-
-
-
-
-
-
         <fieldset class="form__comments">
-          <legend class="form__legend-comments">Комментарий</legend>
-          <textarea class="form__comment-field" name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea>
+          <div class="form__comments-wrapper">
+            <legend class="form__legend-comments">Комментарий</legend>
+          </div>
+          <textarea class="form__comment-field" name="comment" id="comment-field" rows="7" cols="40">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
         <fieldset class="form__addition-info">
-          <legend class="form__legend-addition-info">Дополнительно</legend>
-          <label class="form__label-addition-info">
-            <input class="form__input-addition-info" type="checkbox" name="sweetener" checked>
-            Сахарозаменитель
-          </label>
-          <label class="form__label-addition-info">
-            <input class="form__input-addition-info" type="checkbox" name="water">
-            Питьевая вода
-          </label>
-          <label class="form__label-addition-info">
-            <input class="form__input-addition-info" type="checkbox" name="milk">
-            Молоко
-          </label>
-          <label class="form__label-addition-info">
-            <input class="form__input-addition-info" type="checkbox" name="vitamins">
-            Витамины
-          </label>
+          <div class="form__addition-info-wrapper">
+            <legend class="form__legend-addition-info">Дополнительно</legend>
+          </div>
+          <ul class="form__input-addition-info-list">
+            <li class="form__input-addition-info-item">
+              <input class="form__input-addition-info visually-hidden" type="checkbox" id="add-sweetener" name="sweetener" checked>
+              <label class="form__label-addition-info" for="add-sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="form__input-addition-info-item">
+              <input class="form__input-addition-info visually-hidden" type="checkbox" id="add-water" name="water">
+              <label class="form__label-addition-info" for="add-water">Питьевая вода</label>
+            </li>
+            <li class="form__input-addition-info-item">
+              <input class="form__input-addition-info visually-hidden" type="checkbox" id="add-milk" name="milk">
+              <label class="form__label-addition-info" for="add-milk">Молоко</label>
+            </li>
+            <li class="form__input-addition-info-item">
+              <input class="form__input-addition-info visually-hidden" type="checkbox" id="add-vitamins" name="vitamins">
+              <label class="form__label-addition-info" for="add-vitamins">Витамины</label>
+            </li>
+          </ul>
         </fieldset>
 
-        <button class="form__button" type="submit">Отправить заявку</button>
-        <p class="form__text">* — Обязательные поля</p>
+        <div class="form__button-wrapper">
+          <button class="form__button" type="submit">Отправить заявку</button>
+        </div>
+
+        <div class="form__text-wrapper">
+          <p class="form__text">* — Обязательные поля</p>
+        </div>
       </form>
+
+
 
     </div>
       <section class="contacts">
