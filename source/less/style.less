@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: black;
+  font-style: normal;
+
+  // background-color: @bg-lightgreen;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "variables.less";
+@import "mixins.less";
+@import "fonts.less";
+@import "page-header.less";
+@import "main-nav.less";
+@import "page-main.less";
+@import "first-screen.less";
+@import "categories.less";
+@import "advantages.less";
+@import "progress.less";
+@import "contacts.less";
+@import "page-footer";
+@import "catalog.less";
+@import "extra.less";
+@import "form.less";

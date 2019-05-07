@@ -1,0 +1,151 @@
+.extra {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.extra__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.extra__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+  margin-bottom: 34px;
+
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.extra__list {
+  .list-reset;
+}
+
+.extra__item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: -1px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__table-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 13px;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.extra__table {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: @content-font, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extra__table-data-col-1,
+.extra__table-data-col-2 {
+  margin: 0;
+  padding: 0;
+}
+
+.extra__table-data-col-1 {
+  text-align: left;
+}
+
+.extra__table-data-col-2 {
+  text-align: right;
+}
+
+.extra__button-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  margin-bottom: 17px;
+
+  text-align: center;
+}
+
+.extra__button {
+  .ref-reset;
+  display: inline-block;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  color: white;
+  background-color: @bg-button;
+}
+
+.extra__add {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.extra__add-image-wrapper {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 113px;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/gift.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+.extra__add-image {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  // opacity: 1;
+}
+
+.extra__text {
+  position: absolute;
+  bottom: 25px;
+  left: 18%;
+
+  width: 180px;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  font-family: @content-font, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}

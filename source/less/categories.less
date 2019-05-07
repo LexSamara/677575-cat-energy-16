@@ -1,0 +1,141 @@
+.categories {
+  margin: 0;
+  margin-top: 22px;
+  padding: 0;
+}
+
+.categories__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.categories__list {
+  .list-reset;
+
+  // outline: 1px solid red;
+}
+
+.categories__item {
+  min-height: 266px;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+
+.categories__weight-loss,
+.categories__weight-up {
+  text-align: left;
+
+  p {
+    margin-top: 30px;
+    padding: 0 20px;
+
+    font-family: @content-font, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.categories__title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-top: 32px;
+  margin-left: 80px;
+  padding: 0;
+  padding-left: 10px;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.categories__weight-loss .categories__title {
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -68px;
+    top: -15px;
+
+    width: 70px;
+    height: 70px;
+
+    background-image: url("../img/Vector-Smart-Object-1.png"), url("../img/Ellipse-1.png");
+    background-size: auto, auto;
+    background-position: center 8px, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+.categories__weight-up .categories__title {
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -68px;
+    top: -15px;
+
+    width: 70px;
+    height: 70px;
+
+    background-image: url("../img/Vector-Smart-Object-2.png"), url("../img/Ellipse-1.png");
+    background-size: auto, auto;
+    background-position: center 20px, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+.categories__ref {
+  .ref-reset;
+  display: inline-block;
+  position: relative;
+
+  margin-top: 27px;
+  margin-left: 20px;
+  padding-right: 40px;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: left;
+  color: black;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: -20px;
+    width: 240px;
+    height: 1px;
+
+    background-color: #d9d9d9;
+  }
+
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    z-index: 10;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/right-arrow-long.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
